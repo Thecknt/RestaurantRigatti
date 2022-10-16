@@ -24,7 +24,7 @@
 
 .menu {
     float: right;
-    line-height: 65px;
+    line-height: 80px;
 }
 
 .menu ul {
@@ -48,52 +48,9 @@
 .video {
     display: flex;
     width: 100%;
-    padding: 0;
+    padding-top: 80px;
     margin: 0;
 }
-
-/*.rightsection {
-    display: flex;
-    justify-content: start;
-    background: url(../images/spaguettis.webp);
-    background-size: cover;
-    width: 40vw;
-    margin: 10px 0px 10px 56vw;
-}
-
-.leftsection {
-    display: flex;
-    justify-content: start;
-    background-color: transparent;
-    width: 100vw;
-    margin: 10px 0px 10px 1vw;
-}
-
-.data {
-    display: flex;
-    background-color: brown;
-    flex-direction: column;
-    justify-content: center;
-    height: 50vh;
-    width: 40vw;
-}*/
-
-/*.carrousel {
-    display: flex;
-    justify-content: center;
-    background-color: blacks;
-    width: 100vw;
-    margin: 10px 0px 30px 0px;
-}*/
-
-/*.caja {
-    display: flex;
-    background-color: rgb(241, 8, 206);
-    flex-direction: column;
-    justify-content: center;
-    height: 50vh;
-    width: 100vw;
-}*/
 
 body {
     background-color: rgb(226, 173, 129);

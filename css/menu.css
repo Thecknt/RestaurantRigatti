@@ -24,7 +24,7 @@
 
 .menu {
     float: right;
-    line-height: 65px;
+    line-height: 80px;
 }
 
 .menu ul {
@@ -46,5 +46,6 @@
 }
 
 body {
-    background-color: rgb(226, 173, 129);
+    background: url(../images/fondomenu1.jpg);
+    background-size: cover;
 }
