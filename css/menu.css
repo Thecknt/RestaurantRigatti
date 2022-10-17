@@ -49,3 +49,25 @@ body {
     background: url(../images/fondomenu1.jpg);
     background-size: cover;
 }
+
+.platos {
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+    padding-left: 570px;
+}
+
+.imagenComida {
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/lasania.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+}
+
+.btn {
+    background: rgb(0, 123, 255);
+    color: bisque;
+    text-decoration: none;
+}

@@ -50,6 +50,7 @@
     display: flex;
     align-items: center;
     padding-top: 230px;
+    height: 450px;
 }
 
 .portada-video {
@@ -58,6 +59,7 @@
     left: 0;
     width: 100%;
     overflow: hidden;
+    height: 450px;
 }
 
 .portada-video .video {
@@ -65,14 +67,14 @@
 }
 
 .portada-overlay {
-    /*height: 100vh; */
+    height: 450px;
     width: 100vw;
     position: absolute;
     top: 80px;
     left: 0%;
-    background: rgb(193, 186, 186);
+    background: rgba(193, 186, 186, .28);
     z-index: 1;
-    opacity: .95;
+    padding-top: 230px
 }
 
 .content {
@@ -107,6 +109,11 @@
     color: bisque;
     text-decoration: none;
 
+}
+
+.btn:hover {
+    color: white;
+    background: black;
 }
 
 body {
