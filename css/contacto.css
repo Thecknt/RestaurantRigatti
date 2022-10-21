@@ -1,3 +1,7 @@
+body {
+    background: url(../images/fondomenu1.jpg);
+    background-size: cover;
+}
 * {
     margin: 0;
     padding: 0;
@@ -44,3 +48,80 @@
     background: grey;
     color: black;
 }
+
+.cajapadre {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+    width: 80vh;
+    background-color: white;
+    
+
+    
+}
+
+.titulo-consulta {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 15px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-textarea {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.caja-boton {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boton {
+    width: 30%;
+    height: 15%;
+}
+
+.caja-label {
+    padding-top: 5px;
+    width: 100%;
+
+}
+
+body {
+
+background: url(../images/Recepción-2.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
