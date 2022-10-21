@@ -66,6 +66,10 @@ body {
     float: left;
 }
 
+.imagenComida h1 p {
+    color: rgb(175, 120, 51);
+}
+
 .btn {
     background: rgb(0, 123, 255);
     color: bisque;
