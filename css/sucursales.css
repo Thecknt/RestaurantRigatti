@@ -10,6 +10,8 @@
     height: 80px;
     background-color: black;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .container {
@@ -30,6 +32,7 @@
 .menu ul {
     display: flex;
     list-style: none;
+    margin-right: -44px;
 }
 
 .menu a {
@@ -43,13 +46,17 @@
 .menu a:hover {
     background: grey;
     color: black;
-<<<<<<< HEAD
-=======
+}
+
+.img-carrito {
+    width: 35px;
+    padding-top: 23px;
+    display: flex;
+    margin-left: 30px;
 }
 
 .wrapp {
     display: flex;
-
 }
 
 .izquierda {
@@ -68,7 +75,7 @@
     background-color: white;
 }
 
-.ladoizq{
+.ladoizq {
     margin-left: 15%;
     flex-direction: column;
 }
@@ -92,8 +99,6 @@
     padding: 20px;
 }
 
-
-
 body {
     padding: 80px 0 0 40px;
     background: url(../images/fondoSucursales.jpg);
@@ -101,5 +106,4 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
->>>>>>> ecc4fa08c448ecda4a43ad262f35f6699131a04f
 }

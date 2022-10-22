@@ -30,6 +30,7 @@
 .menu ul {
     display: flex;
     list-style: none;
+    margin-right: -44px;
 }
 
 .menu a {
@@ -48,6 +49,17 @@
 body {
     background: url(../images/fondomenu1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carrito {
+    width: 305px;
+    height: auto;
+    margin-left: -170px;
+}
+
+.img-carrito {
+    width: 35px;
 }
 
 .platos {
@@ -57,13 +69,55 @@ body {
     padding-left: 570px;
 }
 
-.imagenComida {
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/lasania.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    float: left;
+.carta {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.card {
+    display: flex;
+    width: 215px;
+    height: 330px;
+    align-items: center;
+    background-color: black;
+    padding: 7px 7px;
+    border-radius: 7%;
+    margin-right: 15px;
+}
+
+.img-widt {
+    width: 205px;
+    height: 120px;
+    border-radius: 5%;
+}
+
+.encabezado {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo-carta {
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+    justify-content: space-around;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+}
+
+.info-card {
+    display: block;
+    text-align: left;
+}
+
+.box {
+    padding-top: 2px;
+    padding-bottom: 25px;
+    color: antiquewhite;
 }
 
 .btn {
