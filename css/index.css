@@ -30,6 +30,7 @@
 .menu ul {
     display: flex;
     list-style: none;
+    margin-right: -44px;
 }
 
 .menu a {
@@ -118,4 +119,8 @@
 
 body {
     background-color: rgb(226, 173, 129);
+}
+
+.img-carrito {
+    width: 35px;
 }
