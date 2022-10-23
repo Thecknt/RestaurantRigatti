@@ -57,6 +57,8 @@
 
 .wrapp {
     display: flex;
+    column-count: 2;
+    column-gap: 0px;
 }
 
 .izquierda {
@@ -98,7 +100,6 @@
 .lista-wrap {
     padding: 20px;
     border-top: 1px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
 }
 
 body {
