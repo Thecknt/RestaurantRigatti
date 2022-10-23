@@ -83,6 +83,9 @@ fieldset {
     height: 40vw;
     width: 80vh;
     background-color: white;
+    border-radius: 57px 57px 57px 57px;
+    -webkit-border-radius: 57px 57px 57px 57px;
+    -moz-border-radius: 57px 57px 57px 57px;
 
 
 
@@ -102,6 +105,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     display: flex;
+    
 }
 
 .caja-boton {
@@ -113,11 +117,23 @@ fieldset {
 .boton {
     width: 30%;
     height: 15%;
+    margin-top: 10px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    background-color:#FFD27D;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
 }
+
 
 .caja-label {
     padding-top: 5px;
     width: 100%;
+    
 
 }
 
@@ -128,3 +144,8 @@ body {
     background-size: cover;
 
 }
+.forma-imput {
+    border-radius: 88px 88px 88px 88px;
+    padding: 8px;
+}
+
