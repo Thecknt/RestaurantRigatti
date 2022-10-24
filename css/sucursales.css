@@ -27,6 +27,7 @@
 .menu {
     float: right;
     line-height: 80px;
+    margin-right: 70px;
 }
 
 .menu ul {

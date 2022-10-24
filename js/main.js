@@ -39,8 +39,8 @@ const box = document.createElement('tr');
 box.innerHTML = `<td>
 <img src="${plato.imagen} width=100>
 </td>
-<td>${plato.titulo}></td>
-<td>${plato.precio}></td>
+<td>${plato.titulo}</td>
+<td>${plato.precio}</td>
 <td>
 <a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
 </td>`;
@@ -105,8 +105,8 @@ function verLocalStorage() {
         <td>
         <img src="${plato.imagen}" width=100>
         </td>
-        <td>${plato.titulo}></td>
-        <td>${plato.precio}></td>
+        <td>${plato.titulo}</td>
+        <td>${plato.precio}</td>
         <td>
         <a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
         </td>`;

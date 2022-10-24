@@ -30,7 +30,6 @@
 .menu ul {
     display: flex;
     list-style: none;
-    margin-right: -44px;
 }
 
 .menu a {
@@ -44,6 +43,51 @@
 .menu a:hover {
     background: grey;
     color: black;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu .carrito {
+    display: none;
+}
+
+.carrito {
+    width: 20px;
+}
+
+.submenu:hover .carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 100%;
+    z-index: 1;
+    background-color: orange;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    z-index: 1;
+    text-align: center;
+}
+
+.submenu:hover #vaciar-carrito #pagar {
+    padding: 0px;
+}
+
+.vaciar-carrito {
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.lista-carrito {
+    width: 250px;
+}
+
+.fix {
+    padding-left: 2px;
 }
 
 .portada {
