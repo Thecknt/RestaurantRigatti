@@ -20,11 +20,13 @@
 .logo {
     float: left;
     line-height: 65px;
+    padding-left: 8px;
 }
 
 .menu {
     float: right;
     line-height: 80px;
+    margin-right: 50px;
 }
 
 .menu ul {
@@ -105,7 +107,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     display: flex;
-    
+
 }
 
 .caja-boton {
@@ -118,22 +120,22 @@ fieldset {
     width: 30%;
     height: 15%;
     margin-top: 10px;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    color:#333333;
-    background-color:#FFD27D;
+    color: #333333;
+    background-color: #FFD27D;
     border-color: #d8d8d8;
     border-width: 3px;
     border-style: solid;
-    border-radius:35px;
+    border-radius: 35px;
 }
 
 
 .caja-label {
     padding-top: 5px;
     width: 100%;
-    
+
 
 }
 
@@ -144,8 +146,8 @@ body {
     background-size: cover;
 
 }
+
 .forma-imput {
     border-radius: 88px 88px 88px 88px;
     padding: 8px;
 }
-

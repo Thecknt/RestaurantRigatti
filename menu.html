@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,8 +27,8 @@
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li>
-                    <ul>
-                        <li>
+                    <ul class="submenu">
+                        <li class="tabla" id="tabla">
                             <img src="./images/carrito de compras.png" alt="carrito" class="img-carrito" id="img-carrito">
                             <div id="carrito" class="carrito">
                                 <table class="lista-carrito" id="lista-carrito">
@@ -37,12 +37,15 @@
                                             <th>Imagen</th>
                                             <th>Nombre</th>
                                             <th>Precio</th>
-                                            <th></th>
                                         </tr>
                                     </thead>
-                                    <tbody></tbody>
+                                    <hr>
+                                    <tbody>
+
+                                    </tbody>
                                 </table>
-                                <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+                                <a href="#" id="vaciar-carrito" class="vaciar-carrito" style="height:70px;">Vaciar Carrito</a>
+                                <a href="#" id="pagar" class="pagar" style="height:70px;background-color: black; border-radius: 23px; margin-top: 15px;">Realizar pago</a>
                             </div>
                         </li>
                     </ul>
@@ -52,19 +55,19 @@
     </div>
     </header>
     <h1 class="titulo-carta">Hace tu pedido</h1>
-    <section class="carta">
+    <section class="carta" id="platos">
         
         <div class="encabezado">
             
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/agnolotti.jpg" alt="agnolotti" class="img-widt">
+            <img src="images/agnolotti.jpg" alt="agnolotti" class="img-widt">
             <div class="info-card">
                 <h4>Agnolottis</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$499 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="1">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -72,12 +75,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/albondigas.jpg" alt="albondigas" class="img-widt">
+            <img src="images/albondigas.jpg" alt="albondigas" class="img-widt">
             <div class="info-card">
                 <h4>Albondigas</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$299 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="2">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -85,12 +88,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/bistec-a-la-fiorentina.jpg" alt="Bistec" class="img-widt">
+            <img src="images/bistec-a-la-fiorentina.jpg" alt="Bistec" class="img-widt">
             <div class="info-card">
                 <h4>Bistec a la Fiorentina</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$699 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="3">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -98,12 +101,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/carpaccio.jpg" alt="carpaccio" class="img-widt">
+            <img src="images/carpaccio.jpg" alt="carpaccio" class="img-widt">
             <div class="info-card">
                 <h4>Carpaccio</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$399 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="4">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -111,12 +114,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/ensalada-capresse.jpg" alt="ensalada-capresse" class="img-widt">
+            <img src="images/ensalada-capresse.jpg" alt="ensalada-capresse" class="img-widt">
             <div class="info-card">
                 <h4>Ensalada Capresse</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$199 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="5">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -124,12 +127,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/espaguetis-a-la-bolonesa.jpg" alt="espaguetis-a-la-bolonesa" class="img-widt">
+            <img src="images/espaguetis-a-la-bolonesa.jpg" alt="espaguetis-a-la-bolonesa" class="img-widt">
             <div class="info-card">
                 <h4>Espaguetis a la Boloñesa</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$450 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="6">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -137,12 +140,12 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/espaguetis-a-la-carbonara.jpg" alt="espaguetis-a-la-carbonara" class="img-widt">
+            <img src="images/espaguetis-a-la-carbonara.jpg" alt="espaguetis-a-la-carbonara" class="img-widt">
             <div class="info-card">
                 <h4>Espaguetis a la Carbonara</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$450 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="7">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
@@ -150,18 +153,18 @@
         <div class="box">
             <div class="columnas-pedido">
         <div class="card">
-            <img src="./images/lasania.jpg" alt="lasania" class="img-widt">
+            <img src="images/lasania.jpg" alt="lasania" class="img-widt">
             <div class="info-card">
                 <h4>Lasaña</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="precio">$599 </p>
-                <a href="#" class="button-agregar">Agrega a tu pedido</a>
+                <a href="#" class="button-agregar" data-id="8">Agrega a tu pedido</a>
             </div>
         </div>
             </div>
         </div>
         </div>
            </section>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
