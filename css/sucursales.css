@@ -22,6 +22,7 @@
 .logo {
     float: left;
     line-height: 65px;
+    padding-left: 8px;
 }
 
 .menu {

@@ -1,8 +1,8 @@
-
 const carrito = document.getElementById('carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const platos = document.getElementById('platos');
+const pagar = document.getElementById('pagar');
 
 cargarEventListeners();
 
