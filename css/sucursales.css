@@ -22,11 +22,13 @@
 .logo {
     float: left;
     line-height: 65px;
+    padding-left: 8px;
 }
 
 .menu {
     float: right;
     line-height: 80px;
+    margin-right: 70px;
 }
 
 .menu ul {
