@@ -173,3 +173,14 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
+.menu .submenu a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-carrito .vaciar-carrito a {
+    height: 20px;
+}
