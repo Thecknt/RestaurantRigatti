@@ -91,8 +91,10 @@ body {
 }
 
 .list-group{
-    border: 2px solid #000000;
+    border: 5px double #000000;
+    height: 100%;
 }
+
 
 hr{
     height: 1px;
@@ -101,11 +103,22 @@ hr{
 }
 
 @media screen and (min-width: 800px){
-    .col-sm-4{
-        width: 20%;
-    }
-    iframe{
-        width: 80%;
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        .col-sm-4{
+            background-color: hsla(50%, 100%, 40%, 50%)
+        }
+    body{
+        background-size: auto;
     }
 }
 
+a:visited{
+    text-decoration: none;
+    color:black
+}
