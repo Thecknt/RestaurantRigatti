@@ -122,3 +122,59 @@ a:visited{
     text-decoration: none;
     color:black
 }
+
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+  }
+
+[id^= "item"] {
+    display: none;
+  }
+  .list-shop1 {
+    z-index: 2;
+    opacity: 1;
+    background-size: cover;
+  }
+  .list-shop2 {
+    background-size: cover;
+  }
+  .list-shop3 {
+    background-size: cover;
+  }
+  .list-shop4 {
+    background-size: cover;
+  }
+  .list-shop5 {
+    background-size: cover;
+  }
+  .list-shop6 {
+    background-size: cover;
+  }
+  
+  *:target ~ .list-shop1{
+    opacity: 0;
+  }
+  #list-shop1:target ~ .list-shop1 {
+    opacity: 1;
+  
+  }
+  #list-shop2:target ~ .list-shop2, #list-shop3:target ~ .list-shop3, #list-shop4:target ~ .list-shop4, #list-shop5:target ~ .list-shop5, #list-shop6:target ~ .list-shop6 {
+    z-index: 3;
+    opacity: 1;
+  } 
+
+  .tab-pane {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
