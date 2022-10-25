@@ -14,7 +14,7 @@
     left: 0;
 }
 
-.container {
+.containerh {
     max-width: 100%;
     margin: auto;
 }
@@ -22,11 +22,13 @@
 .logo {
     float: left;
     line-height: 65px;
+    padding-left: 8px;
 }
 
 .menu {
     float: right;
     line-height: 80px;
+    margin-right: 70px;
 }
 
 .menu ul {
@@ -55,58 +57,55 @@
     margin-left: 30px;
 }
 
-.wrapp {
-    display: flex;
-    column-count: 2;
-    column-gap: 0px;
-}
-
-.izquierda {
-    flex: 50%;
-    padding-top: 50px;
-    margin-top: 50px;
-    margin-left: 10%;
-    background-color: white;
-}
-
-.derecha {
-    flex: 50%;
-    padding-top: 50px;
-    margin-top: 50px;
-    margin-right: 10%;
-    background-color: white;
-}
-
-.ladoizq {
-    margin-left: 15%;
-    flex-direction: column;
-}
-
-.scroll-bg {
-    overflow: hidden;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100%;
-}
-
-.scroll-div {
-    height: 700px;
-    object-fit: cover;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.lista-wrap {
-    padding: 20px;
-    border-top: 1px solid #cfcfcf;
-}
-
 body {
-    padding: 80px 0 0 40px;
+    padding: 80px 0 0 0px;
     background: url(../images/fondoSucursales.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+
+    margin: 0;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
 }
+
+.container {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow: 0px 5px 20px 0px rgb(204 204 204 / 50%);
+}
+
+.list-group{
+    border: 2px solid #000000;
+}
+
+hr{
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+@media screen and (min-width: 800px){
+    .col-sm-4{
+        width: 20%;
+    }
+    iframe{
+        width: 80%;
+    }
+}
+

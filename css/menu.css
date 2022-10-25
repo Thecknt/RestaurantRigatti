@@ -30,7 +30,6 @@
 .menu ul {
     display: flex;
     list-style: none;
-    margin-right: -44px;
 }
 
 .menu a {
@@ -46,16 +45,41 @@
     color: black;
 }
 
+.submenu {
+    position: relative;
+}
+
+.submenu .carrito {
+    display: none;
+}
+
+.carrito {
+    width: 20px;
+}
+
+.submenu:hover .carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 100%;
+    z-index: 1;
+    background-color: orange;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    z-index: 1;
+    text-align: center;
+}
+
+.submenu:hover #vaciar-carrito #pagar {
+    padding: 0px;
+}
+
 body {
     background: url(../images/fondomenu1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.carrito {
-    width: 305px;
-    height: auto;
-    margin-left: -170px;
 }
 
 .img-carrito {
@@ -74,7 +98,23 @@ body {
     display: flex;
     align-items: center;
     float: right;
+    margin-right: 170px;
+    z-index: 0;
 }
+
+.vaciar-carrito {
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.lista-carrito {
+    width: 250px;
+}
+
+/*.menu .lista-carrito a {
+    height: 50px;
+}*/
 
 .card {
     display: flex;
@@ -120,8 +160,27 @@ body {
     color: antiquewhite;
 }
 
-.btn {
-    background: rgb(0, 123, 255);
-    color: bisque;
+.button-agregar {
+    background-color: orange;
     text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    margin-left: 5px;
+    margin-left: 5px;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menu .submenu a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-carrito .vaciar-carrito a {
+    height: 20px;
 }
