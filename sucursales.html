@@ -46,8 +46,8 @@
                 </div>
                 <div class="parent">
                     <div class="col-sm-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action" id="list-shop1-list" data-toggle="list"
+                        <ul id="list">
+                            <li class="list-group-item list-group-item-action" id="list-shop1-list" data-toggle="list"
                                 href="#list-shop1" role="tab" aria-controls="shop1">
                                 <h5 class="card-title">Restoraunte Risotto | ABASTO</h5>
                                 <br>
@@ -57,9 +57,9 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
+                            </li>
                             <hr class="sep">
-                            <a class="list-group-item list-group-item-action" id="list-shop2-list" data-toggle="list"
+                            <li class="list-group-item list-group-item-action" id="list-shop2-list" data-toggle="list"
                                 href="#list-shop2" role="tab" aria-controls="shop2">
                                 <h5 class="card-title">Restoraunte Risotto | DISTRITO ARCOS </h5>
                                 <br>
@@ -69,9 +69,9 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
+                            </li>
                             <hr class="sep">
-                            <a class="list-group-item list-group-item-action" id="list-shop3-list" data-toggle="list"
+                            <li class="list-group-item list-group-item-action" id="list-shop3-list" data-toggle="list"
                                 href="#list-shop3" role="tab" aria-controls="shop3">
                                 <h5 class="card-title">Restoraunte Risotto | ALTO PALERMO SHOPPING</h5>
                                 <br>
@@ -82,9 +82,9 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
+                            </li>
                             <hr class="sep">
-                            <a class="list-group-item list-group-item-action" id="list-shop4-list" data-toggle="list"
+                            <li class="list-group-item list-group-item-action" id="list-shop4-list" data-toggle="list"
                                 href="#list-shop4" role="tab" aria-controls="shop4">
                                 <h5 class="card-title">Restoraunte Risotto | DEVOTO SHOPPING</h5>
                                 <br>
@@ -94,9 +94,9 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
+                            </li>
                             <hr class="sep">
-                            <a class="list-group-item list-group-item-action" id="list-shop5-list" data-toggle="list"
+                            <li class="list-group-item list-group-item-action" id="list-shop5-list" data-toggle="list"
                                 href="#list-shop5" role="tab" aria-controls="shop5">
                                 <h5 class="card-title">Restoraunte Risotto | RECOLETA URBAN MALL</h5>
                                 <br>
@@ -106,9 +106,9 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
+                            </li>
                             <hr class="sep">
-                            <a class="list-group-item list-group-item-action" id="list-shop6-list" data-toggle="list"
+                            <li class="list-group-item list-group-item-action" onclick="javascript:showBranch(this,-34.676518, -58.368536)" id="list-shop6-list" data-toggle="list"
                                 href="#list-shop6" role="tab" aria-controls="shop6">
                                 <h5 class="card-title">Restoraunte Risotto | GALERÍAS PACÍFICO</h5>
                                 <br>
@@ -118,45 +118,14 @@
                                 <p class="card-text small">
                                     "+54 11 1234-5678"
                                 </p>
-                            </a>
-
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="carousel-wrapper">
-                        <div class="tab-pane fade show active list-shop1" id="list-shop1" role="tabpanel"
+                    <div class="cw">
+                        <div class="tab-pane fade show active list-shop1" id="map" role="tabpanel"
                             aria-labelledby="list-shop1-list">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.525581294685!2d-58.43292631124292!3d-34.605661050670676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1666622163126!5m2!1ses-419!2sar"
-                                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        <div class="tab-pane fade show" id="list-shop2" role="tabpanel"
-                            aria-labelledby="list-shop2-list">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9336939328978!2d-58.42997654815388!3d-34.58054426368568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aabcb7b7fd341%3A0xd4d803156d38286c!2sDistrito%20Arcos%20Premium%20Outlet!5e0!3m2!1ses-419!2sar!4v1666624412998!5m2!1ses-419!2sar"
-                                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        <div class="tab-pane fade show" id="list-shop3" role="tabpanel"
-                            aria-labelledby="list-shop3-list">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.626484680668!2d-58.41524702876106!3d-34.58831650150054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses-419!2sar!4v1666624629438!5m2!1ses-419!2sar"
-                                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        <div class="tab-pane fade show" id="list-shop4" role="tabpanel"
-                            aria-labelledby="list-shop4-list">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7005646189737!2d-58.51995984815328!3d-34.61173256533539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d7332684cd%3A0xd9ee55bbdfa6c539!2sDevoto%20Shopping!5e0!3m2!1ses-419!2sar!4v1666624681401!5m2!1ses-419!2sar"
-                                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        <div class="tab-pane fade show" id="list-shop5" role="tabpanel"
-                            aria-labelledby="list-shop5-list">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.594169741858!2d-58.39612884815376!3d-34.58913396413976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa290012ce5%3A0xd5bb82a0545d9628!2sRecoleta%20Urban%20Mall!5e0!3m2!1ses-419!2sar!4v1666624725457!5m2!1ses-419!2sar"
-                                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                        <div class="tab-pane fade show" id="list-shop6" role="tabpanel"
-                            aria-labelledby="list-shop6-list">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.194410781133!2d-58.37697294815355!3d-34.59924516467483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0b1afcaf%3A0x8d53a5cf4f399e9c!2zR2FsZXLDrWFzIFBhY8OtZmljbw!5e0!3m2!1ses-419!2sar!4v1666624775844!5m2!1ses-419!2sar"
                                 width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
@@ -170,6 +139,85 @@
 
     </div>
     </div>
+    <script>
+        var map;
+        var markers = [];
+
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(-34.676518, -58.368536),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            map = new google.maps.Map(mapCanvas, mapOptions);
+
+            markers[0] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.676518, -58.368536),
+                map: map,
+                title: 'Restoraunte Risotto | ABASTO'
+            });
+            markers[1] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.633964, -58.629471),
+                map: map,
+                title: 'Restoraunte Risotto | DISTRITO ARCOS'
+            });
+            markers[2] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.642105, -58.565666),
+                map: map,
+                title: 'Restoraunte Risotto | ALTO PALERMO SHOPPING'
+            });
+            markers[3] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.54602, -58.489113),
+                map: map,
+                title: 'Restoraunte Risotto | DEVOTO SHOPPING'
+            });
+            markers[4] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.580198, -58.428085),
+                map: map,
+                title: 'Restoraunte Risotto | RECOLETA URBAN MALL'
+            });
+            markers[5] = new google.maps.Marker({
+                position: new google.maps.LatLng(-34.603389, -58.410848),
+                map: map,
+                title: 'Restoraunte Risotto | GALERÍAS PACÍFICO'
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function showBranch(row, latitude, longitude) {
+            map.setCenter(new google.maps.LatLng(latitude, longitude));
+            map.setZoom(16);
+            $(".shop").removeClass("selected");
+            $(row).addClass("selected");
+        }
+        function showAll() {
+            var bounds = new google.maps.LatLngBounds();
+            for (i = 0; i < markers.length; i++) {
+                bounds.extend(markers[i].getPosition());
+            }
+
+            //center the map to the geometric center of all markers
+            map.setCenter(bounds.getCenter());
+
+            map.fitBounds(bounds);
+
+            // set a minimum zoom 
+            // if you got only 1 marker or all markers are on the same address map will be zoomed too much.
+            if (map.getZoom() > 15) {
+                map.setZoom(15);
+            }
+
+            //Alternatively this code can be used to set the zoom for just 1 marker and to skip redrawing.
+            //Note that this will not cover the case if you have 2 markers on the same address.
+            if (count(markers) == 1) {
+                map.setMaxZoom(15);
+                map.fitBounds(bounds);
+                map.setMaxZoom(Null)
+            }
+        }
+
+    </script>
     <script src="js\sucursales.js"></script>
 </body>
 
