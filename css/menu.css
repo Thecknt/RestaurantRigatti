@@ -63,7 +63,6 @@
     right: 0;
     color: white;
     top: 100%;
-    z-index: 1;
     background-color: orange;
     padding: 20px;
     min-height: 400px;
@@ -125,6 +124,7 @@ body {
     padding: 7px 7px;
     border-radius: 7%;
     margin-right: 15px;
+    justify-content: space-around;
 }
 
 .img-widt {
@@ -183,4 +183,8 @@ body {
 
 .lista-carrito .vaciar-carrito a {
     height: 20px;
+}
+
+.thead {
+    padding-right: 12px;
 }

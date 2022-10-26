@@ -36,7 +36,8 @@ function leerDatosPlatos(plato) {
 function insertarCarrito(plato) {
 
 const box = document.createElement('tr');
-box.innerHTML = `<td>
+box.innerHTML = `
+<td>
 <img src="${plato.imagen} width=100>
 </td>
 <td>${plato.titulo}</td>

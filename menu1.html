@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo2-80x80.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Restoraunte Risotto</title>
+</head>
+<body>
+    <header class="header">  
+        <div class="container">
+            <div class="logo">
+                
+                <a href="index.html"><img src="./images/logo2-80x80.jpg" alt="Logo"></a>
+            </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                    <ul class="submenu">
+                        <li class="tabla" id="tabla" style="display:block;">
+                            <img src="images/carrito de compras.png" alt="carrito" class="img-carrito" id="img-carrito">
+                            <div id="carrito" class="carrito">
+                                <table class="lista-carrito" id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <hr>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="vaciar-carrito" style="height:70px;">Vaciar Carrito</a>
+                                <a href="#" id="pagar" class="pagar" style="height:70px;background-color: black; border-radius: 23px; margin-top: 15px;">Realizar pago</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <h1 class="titulo-carta">Hace tu pedido</h1>
+    <section class="carta" id="platos">
+        
+        <div class="encabezado">
+            
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/agnolotti.jpg" alt="agnolotti" class="img-widt">
+            <div class="info-card">
+                <h4>Agnolottis</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$499 </p>
+                <a href="#" class="button-agregar" data-id="1">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/albondigas.jpg" alt="albondigas" class="img-widt">
+            <div class="info-card">
+                <h4>Albondigas</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$299 </p>
+                <a href="#" class="button-agregar" data-id="2">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/bistec-a-la-fiorentina.jpg" alt="Bistec" class="img-widt">
+            <div class="info-card">
+                <h4>Bistec a la Fiorentina</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$699 </p>
+                <a href="#" class="button-agregar" data-id="3">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/carpaccio.jpg" alt="carpaccio" class="img-widt">
+            <div class="info-card">
+                <h4>Carpaccio</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$399 </p>
+                <a href="#" class="button-agregar" data-id="4">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/ensalada-capresse.jpg" alt="ensalada-capresse" class="img-widt">
+            <div class="info-card">
+                <h4>Ensalada Capresse</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$199 </p>
+                <a href="#" class="button-agregar" data-id="5">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/espaguetis-a-la-bolonesa.jpg" alt="espaguetis-a-la-bolonesa" class="img-widt">
+            <div class="info-card">
+                <h4>Espaguetis a la Boloñesa</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$450 </p>
+                <a href="#" class="button-agregar" data-id="6">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/espaguetis-a-la-carbonara.jpg" alt="espaguetis-a-la-carbonara" class="img-widt">
+            <div class="info-card">
+                <h4>Espaguetis a la Carbonara</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$450 </p>
+                <a href="#" class="button-agregar" data-id="7">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columnas-pedido">
+        <div class="card">
+            <img src="images/lasania.jpg" alt="lasania" class="img-widt">
+            <div class="info-card">
+                <h4>Lasaña</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">$599 </p>
+                <a href="#" class="button-agregar" data-id="8">Agrega a tu pedido</a>
+            </div>
+        </div>
+            </div>
+        </div>
+        </div>
+           </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
