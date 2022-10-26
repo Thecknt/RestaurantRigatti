@@ -106,6 +106,7 @@
     width: 100%;
     overflow: hidden;
     height: 450px;
+    border: 5px black solid;
 }
 
 .portada-video .video {
@@ -147,7 +148,7 @@
 
 .portada-content p {
     top: 80px;
-    font-size: 30px;
+    font-size: 40px;
     display: block;
     padding-bottom: 4px;
 }
@@ -165,7 +166,9 @@
 }
 
 body {
-    background-color: rgb(226, 173, 129);
+    background: url(../images/pennerigate.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-carrito {
@@ -198,17 +201,18 @@ body {
 }
     
 #contimguno {
-    content: url(https://i.blogs.es/4dff8b/pasta-mantequilla/840_560.jpg);
+    content: url(../images/risotto-alla-milanese.jpg);
 }
 
+
 #contimgdos {
-    content: url(https://i.blogs.es/4dff8b/pasta-mantequilla/840_560.jpg);
+    content: url(../images/el-restaurante.jpg);
     right: 0px;
     left: 30px
 }
 
 #contimgtres {
-    content: url(https://i.blogs.es/4dff8b/pasta-mantequilla/840_560.jpg);
+    content: url(../images/contacto.jpg);
 }
 
 .elementotexto {
@@ -240,4 +244,16 @@ body {
 .elementotexto p {
     font-size: 20px;
     z-index: 1
+}
+
+.piepagina .foottexto{
+    background-color: black;
+    margin-bottom: -30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+    font-weight: 200;
+    color: azure;
 }
