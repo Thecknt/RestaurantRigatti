@@ -3,6 +3,9 @@ const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const platos = document.getElementById('platos');
 const pagar = document.getElementById('pagar');
+let total = document.querySelector('.total');
+
+let totalCart="0";
 
 cargarEventListeners();
 
@@ -31,6 +34,9 @@ function leerDatosPlatos(plato) {
     }
     
     insertarCarrito(infoPlatos);
+    
+    totalCart = parseFloat(totalCart) + parseFloat(infoPlatos.precio);
+    totalCart = totalCart.toFixed(2);
 }
 
 function insertarCarrito(plato) {
@@ -38,7 +44,7 @@ function insertarCarrito(plato) {
 const box = document.createElement('tr');
 box.innerHTML = `
 <td>
-<img src="${plato.imagen} width=100>
+<img src="${plato.imagen} width=100 style="border-radius: 15px">
 </td>
 <td>${plato.titulo}</td>
 <td>${plato.precio}</td>
@@ -47,6 +53,9 @@ box.innerHTML = `
 </td>`;
 
 listaCarrito.appendChild(box);
+
+total.innerHTML = totalCart;
+
 guardarPlatoLocalStorage(plato);
 }
 
@@ -104,7 +113,7 @@ function verLocalStorage() {
         const box = document.createElement('tr');
         box.innerHTML =`
         <td>
-        <img src="${plato.imagen}" width=100>
+        <img src="${plato.imagen}" width=100 style="border-radius: 15px">
         </td>
         <td>${plato.titulo}</td>
         <td>${plato.precio}</td>
@@ -112,7 +121,9 @@ function verLocalStorage() {
         <a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
         </td>`;
 
-        listaCarrito.appendChild(box)
+        listaCarrito.appendChild(box);
+
+        total.innerHTML = totalCart;
     })
 }
 
