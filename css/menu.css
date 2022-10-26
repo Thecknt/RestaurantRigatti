@@ -10,6 +10,7 @@
     height: 80px;
     background-color: black;
     position: fixed;
+    z-index: 2;
 }
 
 .container {
@@ -138,6 +139,7 @@ body {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .titulo-carta {
