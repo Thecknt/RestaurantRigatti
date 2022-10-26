@@ -191,3 +191,13 @@ body {
 .thead {
     padding-right: 12px;
 }
+
+.simboloPesos {
+    display: flex;
+}
+
+.precio {
+    height: 2px;
+    width: 2px;
+    display: inline;
+}

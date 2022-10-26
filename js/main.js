@@ -3,9 +3,9 @@ const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const platos = document.getElementById('platos');
 const pagar = document.getElementById('pagar');
-let total = document.querySelector('.total');
+let total = document.getElementById('total');
 
-let totalCart="0";
+let totalCart= 0
 
 cargarEventListeners();
 
@@ -19,9 +19,11 @@ function cargarEventListeners() {
 function comprar(e) {
     e.preventDefault();
 if(e.target.classList.contains('button-agregar')){
+    totalCart;
     const plato = e.target.parentElement.parentElement;
     leerDatosPlatos(plato);
     }
+    
 }
 
 
@@ -29,14 +31,13 @@ function leerDatosPlatos(plato) {
     const infoPlatos = {
         imagen: plato.querySelector('img').src,
         titulo: plato.querySelector('h4').textContent,
-        precio: plato.querySelector('.precio').textContent,
+        precio: plato.querySelector('#precio').textContent,
         id: plato.querySelector('a').getAttribute('data-id'),
     }
-    
-    insertarCarrito(infoPlatos);
-    
-    totalCart = parseFloat(totalCart) + parseFloat(infoPlatos.precio);
+    totalCart = parseFloat(totalCart) + parseFloat(infoPlatos.precio) ;
     totalCart = totalCart.toFixed(2);
+    insertarCarrito(infoPlatos);
+
 }
 
 function insertarCarrito(plato) {
@@ -70,6 +71,9 @@ function eliminarPlato(e) {
         plato = e.target.parentElement.parentElement;
         platoId = plato.querySelector('a').getAttribute('data-id');
     }
+
+    totalCart = parseFloat(totalCart) - parseFloat(totalCart);
+    totalCart = totalCart.toFixed(2);
 eliminarPlatolocalStorage(platoId);
 }
 
@@ -102,6 +106,7 @@ function obtenerPlatosLocalStorage() {
         platosLocal = JSON.parse(localStorage.getItem('platos'));
     }
     return platosLocal;
+    console.log(platosLocal)
 }
 
 function verLocalStorage() {
@@ -143,4 +148,5 @@ function eliminarPlatolocalStorage(plato){
 
 function vaciarLocalStorage(){
     localStorage.clear();
+    total.innerHTML = totalCart;
 }
