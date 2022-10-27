@@ -134,4 +134,5 @@ li{
 li:hover{
   background-color: grey;
   color: black;
+  cursor: pointer;
 }
