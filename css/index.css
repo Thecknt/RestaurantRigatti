@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 
 .header {
     width: 100%;
@@ -248,12 +249,37 @@ body {
 
 .piepagina .foottexto{
     background-color: black;
-    margin-bottom: -30px;
+    height: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 16.66% 16.66% 16.66% 50% ;
 }
 
-.box{
+.piepagina .foottexto .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 200;
     color: azure;
+}
+.piepagina .foottexto .box a{
+    text-decoration: none;
+}
+
+.piepagina .foottexto .box p{
+    margin-bottom: 0%;
+    text-align: end;
+}
+
+.towhatsapp{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    content: url(../images/whatsapp.png);
+}
+
+.tofacebook{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    content: url(../images/facebook.png);
 }
