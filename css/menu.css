@@ -10,6 +10,7 @@
     height: 80px;
     background-color: black;
     position: fixed;
+    z-index: 2;
 }
 
 .container {
@@ -63,13 +64,13 @@
     right: 0;
     color: white;
     top: 100%;
-    z-index: 1;
     background-color: orange;
     padding: 20px;
     min-height: 400px;
-    min-width: 300px;
+    min-width: 430px;
     z-index: 1;
     text-align: center;
+    border-radius: bottom 20px;
 }
 
 .submenu:hover #vaciar-carrito #pagar {
@@ -109,7 +110,7 @@ body {
 }
 
 .lista-carrito {
-    width: 250px;
+    width: 380px;
 }
 
 /*.menu .lista-carrito a {
@@ -119,12 +120,13 @@ body {
 .card {
     display: flex;
     width: 215px;
-    height: 330px;
+    height: 336px;
     align-items: center;
     background-color: black;
     padding: 7px 7px;
     border-radius: 7%;
     margin-right: 15px;
+    justify-content: space-between;
 }
 
 .img-widt {
@@ -138,6 +140,7 @@ body {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .titulo-carta {
@@ -183,4 +186,18 @@ body {
 
 .lista-carrito .vaciar-carrito a {
     height: 20px;
+}
+
+.thead {
+    padding-right: 12px;
+}
+
+.simboloPesos {
+    display: flex;
+}
+
+.precio {
+    height: 2px;
+    width: 2px;
+    display: inline;
 }

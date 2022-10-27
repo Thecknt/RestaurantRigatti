@@ -3,6 +3,9 @@ const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const platos = document.getElementById('platos');
 const pagar = document.getElementById('pagar');
+let total = document.getElementById('total');
+
+let totalCart= 0
 
 cargarEventListeners();
 
@@ -16,9 +19,11 @@ function cargarEventListeners() {
 function comprar(e) {
     e.preventDefault();
 if(e.target.classList.contains('button-agregar')){
+    totalCart;
     const plato = e.target.parentElement.parentElement;
     leerDatosPlatos(plato);
     }
+    
 }
 
 
@@ -26,18 +31,21 @@ function leerDatosPlatos(plato) {
     const infoPlatos = {
         imagen: plato.querySelector('img').src,
         titulo: plato.querySelector('h4').textContent,
-        precio: plato.querySelector('.precio').textContent,
+        precio: plato.querySelector('#precio').textContent,
         id: plato.querySelector('a').getAttribute('data-id'),
     }
-    
+    totalCart = parseFloat(totalCart) + parseFloat(infoPlatos.precio) ;
+    totalCart = totalCart.toFixed(2);
     insertarCarrito(infoPlatos);
+
 }
 
 function insertarCarrito(plato) {
 
 const box = document.createElement('tr');
-box.innerHTML = `<td>
-<img src="${plato.imagen} width=100>
+box.innerHTML = `
+<td>
+<img src="${plato.imagen} width=100 style="border-radius: 15px">
 </td>
 <td>${plato.titulo}</td>
 <td>${plato.precio}</td>
@@ -46,6 +54,9 @@ box.innerHTML = `<td>
 </td>`;
 
 listaCarrito.appendChild(box);
+
+total.innerHTML = totalCart;
+
 guardarPlatoLocalStorage(plato);
 }
 
@@ -60,6 +71,9 @@ function eliminarPlato(e) {
         plato = e.target.parentElement.parentElement;
         platoId = plato.querySelector('a').getAttribute('data-id');
     }
+
+    totalCart = parseFloat(totalCart) - parseFloat(totalCart);
+    totalCart = totalCart.toFixed(2);
 eliminarPlatolocalStorage(platoId);
 }
 
@@ -92,6 +106,7 @@ function obtenerPlatosLocalStorage() {
         platosLocal = JSON.parse(localStorage.getItem('platos'));
     }
     return platosLocal;
+    console.log(platosLocal)
 }
 
 function verLocalStorage() {
@@ -103,7 +118,7 @@ function verLocalStorage() {
         const box = document.createElement('tr');
         box.innerHTML =`
         <td>
-        <img src="${plato.imagen}" width=100>
+        <img src="${plato.imagen}" width=100 style="border-radius: 15px">
         </td>
         <td>${plato.titulo}</td>
         <td>${plato.precio}</td>
@@ -111,7 +126,9 @@ function verLocalStorage() {
         <a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
         </td>`;
 
-        listaCarrito.appendChild(box)
+        listaCarrito.appendChild(box);
+
+        total.innerHTML = totalCart;
     })
 }
 
@@ -131,4 +148,5 @@ function eliminarPlatolocalStorage(plato){
 
 function vaciarLocalStorage(){
     localStorage.clear();
+    total.innerHTML = totalCart;
 }

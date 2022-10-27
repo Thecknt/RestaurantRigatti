@@ -26,29 +26,49 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li>
-                    <ul class="submenu">
-                        <li class="tabla" id="tabla">
-                            <img src="./images/carrito de compras.png" alt="carrito" class="img-carrito" id="img-carrito">
+                <li class="submenu">
+                        <div class="tabla" id="tabla" style="display:block;">
+                            <img src="images/carrito de compras.png" alt="carrito" class="img-carrito" id="img-carrito">
+                            <div>
                             <div id="carrito" class="carrito">
+                              <div>  
+                                        <div> 
                                 <table class="lista-carrito" id="lista-carrito">
-                                    <thead>
+                                    
+                                     
+                                    <thead class="thead">
                                         <tr>
                                             <th>Imagen</th>
                                             <th>Nombre</th>
                                             <th>Precio</th>
                                         </tr>
                                     </thead>
-                                    <hr>
+                                    
+                                    <div>
+                                        <div>
                                     <tbody>
 
                                     </tbody>
+                                    
+                                </div>
+                                </div>
                                 </table>
-                                <a href="#" id="vaciar-carrito" class="vaciar-carrito" style="height:70px;">Vaciar Carrito</a>
-                                <a href="#" id="pagar" class="pagar" style="height:70px;background-color: black; border-radius: 23px; margin-top: 15px;">Realizar pago</a>
                             </div>
-                        </li>
-                    </ul>
+                            </div>
+                            <h2>Total: $
+                                <strong class="total" id="total">0</strong>
+                            </h2>
+                            <div>
+                                <div>
+                                    <div>
+                                <a href="#" id="vaciar-carrito" class="vaciar-carrito" style="height:50px; width: 170px; text-align: center; display: flex; justify-content: center; margin-left: 104px; align-items: center;">Vaciar Carrito</a>
+                                <a href="#" id="pagar" class="pagar" style="height:50px; background-color: black; color: white; border-radius: 20px; margin-top: 7px; width: 170px; text-align: center; display: flex; justify-content: center; margin-left: 104px; align-items: center;">Realizar pago</a>
+                                </div>
+                            </div> 
+                             </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -66,7 +86,7 @@
             <div class="info-card">
                 <h4>Agnolottis</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$499 </p>
+                <p class="precio" id="precio">499 $</p>
                 <a href="#" class="button-agregar" data-id="1">Agrega a tu pedido</a>
             </div>
         </div>
@@ -79,7 +99,7 @@
             <div class="info-card">
                 <h4>Albondigas</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$299 </p>
+                <p class="precio" id="precio">299 $</p>
                 <a href="#" class="button-agregar" data-id="2">Agrega a tu pedido</a>
             </div>
         </div>
@@ -92,7 +112,7 @@
             <div class="info-card">
                 <h4>Bistec a la Fiorentina</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$699 </p>
+                <p class="precio" id="precio">699 $</p>
                 <a href="#" class="button-agregar" data-id="3">Agrega a tu pedido</a>
             </div>
         </div>
@@ -105,7 +125,7 @@
             <div class="info-card">
                 <h4>Carpaccio</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$399 </p>
+                <p class="precio" id="precio">399 $</p>
                 <a href="#" class="button-agregar" data-id="4">Agrega a tu pedido</a>
             </div>
         </div>
@@ -118,7 +138,7 @@
             <div class="info-card">
                 <h4>Ensalada Capresse</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$199 </p>
+                <p class="precio" id="precio">199 $</p>
                 <a href="#" class="button-agregar" data-id="5">Agrega a tu pedido</a>
             </div>
         </div>
@@ -131,7 +151,7 @@
             <div class="info-card">
                 <h4>Espaguetis a la Boloñesa</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$450 </p>
+                <p class="precio" id="precio"> 450 $</p>
                 <a href="#" class="button-agregar" data-id="6">Agrega a tu pedido</a>
             </div>
         </div>
@@ -144,7 +164,7 @@
             <div class="info-card">
                 <h4>Espaguetis a la Carbonara</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$450 </p>
+                <p class="precio" id="precio"> 770 $</p>
                 <a href="#" class="button-agregar" data-id="7">Agrega a tu pedido</a>
             </div>
         </div>
@@ -157,7 +177,7 @@
             <div class="info-card">
                 <h4>Lasaña</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="precio">$599 </p>
+                <p class="precio" id="precio">799 $</p>
                 <a href="#" class="button-agregar" data-id="8">Agrega a tu pedido</a>
             </div>
         </div>
