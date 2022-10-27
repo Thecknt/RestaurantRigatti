@@ -98,7 +98,7 @@ body {
 
 hr {
   height: 1px;
-  background-color: rgb(0, 0, 0);
+  background-color: grey;
   border: none;
 }
 
@@ -112,7 +112,7 @@ hr {
   }
 
   .col-sm-4 {
-    background-color: hsla(50%, 100%, 40%, 50%)
+    background-color: black
   }
 
   body {
@@ -123,4 +123,15 @@ hr {
 a:visited {
   text-decoration: none;
   color: white;
+}
+
+li{
+  color: white;
+  background-color: black;
+  transition: all 500ms ease;
+}
+
+li:hover{
+  background-color: grey;
+  color: black;
 }
