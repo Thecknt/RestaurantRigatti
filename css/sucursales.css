@@ -27,8 +27,8 @@
 
 .menu {
   float: right;
-  line-height: 80px;
-  margin-right: 70px;
+  line-height: 70px;
+  margin-right: 50px;
 }
 
 .menu ul {
@@ -108,6 +108,7 @@ hr {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
   }
 
   .col-sm-4 {
@@ -117,6 +118,23 @@ hr {
   body {
     background-size: auto;
   }
+
+  .menu {
+    float: right;
+    line-height: 80px;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .menu {
+    float: right;
+    line-height: 70px;
+    margin-right: 50px;
+    width:auto;
+    font-size: 45%;
+  }
+
 }
 
 a:visited {
@@ -124,13 +142,13 @@ a:visited {
   color: white;
 }
 
-li{
+li {
   color: white;
   background-color: black;
   transition: all 500ms ease;
 }
 
-li:hover{
+li:hover {
   background-color: grey;
   color: black;
   cursor: pointer;
