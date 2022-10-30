@@ -201,3 +201,11 @@ body {
     width: 2px;
     display: inline;
 }
+
+.info-card .button-agregar {
+    margin-bottom: 0px;
+}
+
+.nombre {
+    height: 50px;
+}
