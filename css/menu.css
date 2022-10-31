@@ -270,3 +270,54 @@ body {
         align-items: center;
     }
 }
+
+@media screen and (max-width: 410px) {
+    .menu {
+        float: right;
+        text-align: center;
+        display: contents;
+    }
+
+    .carta {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        float: right;
+        padding-left: 100px;
+        z-index: 0;
+    }
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background: black;
+    margin-top: 1160px;
+}
+
+.towhatsapp {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    content: url(../images/whatsapp.png);
+}
+
+.tofacebook {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    content: url(../images/facebook.png);
+}
+
+.icono {
+    display: inline-grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.icono p {
+    color: white;
+}

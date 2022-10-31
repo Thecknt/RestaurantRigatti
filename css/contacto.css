@@ -151,3 +151,37 @@ body {
     border-radius: 88px 88px 88px 88px;
     padding: 8px;
 }
+
+footer {
+    height: 60px;
+    width: 100%;
+    background: black;
+    margin-top: 500px;
+}
+
+.towhatsapp {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    content: url(../images/whatsapp.png);
+}
+
+.tofacebook {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    content: url(../images/facebook.png);
+}
+
+.icono {
+    display: inline-grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.icono p {
+    color: white;
+}

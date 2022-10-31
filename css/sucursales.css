@@ -131,7 +131,7 @@ hr {
     float: right;
     line-height: 70px;
     margin-right: 50px;
-    width:auto;
+    width: auto;
     font-size: 45%;
   }
 
@@ -152,4 +152,38 @@ li:hover {
   background-color: grey;
   color: black;
   cursor: pointer;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  background: black;
+  margin-top: 250px;
+}
+
+.towhatsapp {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  content: url(../images/whatsapp.png);
+}
+
+.tofacebook {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  content: url(../images/facebook.png);
+}
+
+.icono {
+  display: inline-grid;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.icono p {
+  color: white;
 }
