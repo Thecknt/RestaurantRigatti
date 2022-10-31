@@ -174,7 +174,7 @@
 }
 
 body {
-    background: url(/images/Backinicio.jpg);
+    background: url(/images/backinicio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -343,7 +343,7 @@ body {
 }
 
 .box {
-    height: 20px;
+    height: 60px;
 }
 
 .piepagina .foottexto .box a {
@@ -357,15 +357,15 @@ body {
 
 .towhatsapp {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     content: url(../images/whatsapp.png);
 }
 
 .tofacebook {
     display: flex;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     content: url(../images/facebook.png);
 }
 
