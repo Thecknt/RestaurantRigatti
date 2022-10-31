@@ -185,7 +185,7 @@ body {
     margin-top: 20px;
 }
 
-#containeruno{
+#containeruno {
     margin-top: 160px;
 }
 
@@ -200,7 +200,7 @@ body {
     position: relative;
     right: 25px
 }
-    
+
 #contimguno {
     content: url(../images/risotto-alla-milanese.jpg);
 }
@@ -247,39 +247,48 @@ body {
     z-index: 1
 }
 
-.piepagina .foottexto{
+.piepagina .foottexto {
     background-color: black;
     height: 60px;
     display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 50% ;
+    grid-template-columns: 16.66% 16.66% 16.66% 50%;
 }
 
-.piepagina .foottexto .box{
+.piepagina .foottexto .box {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 200;
     color: azure;
 }
-.piepagina .foottexto .box a{
+
+.piepagina .foottexto .box a {
     text-decoration: none;
 }
 
-.piepagina .foottexto .box p{
+.piepagina .foottexto .box p {
     margin-bottom: 0%;
     text-align: end;
 }
 
-.towhatsapp{
+.towhatsapp {
     display: flex;
     width: 40px;
     height: 40px;
     content: url(../images/whatsapp.png);
 }
 
-.tofacebook{
+.tofacebook {
     display: flex;
     width: 35px;
     height: 35px;
     content: url(../images/facebook.png);
+}
+
+.weather {
+    color: white;
+    margin-left: 28px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
 }

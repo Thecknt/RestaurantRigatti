@@ -10,7 +10,7 @@ window.addEventListener("load",() => {
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((position)=>{
-            console.log(position);
+        
             lon = position.coords.longitude;
             lat = position.coords.latitude;
 
@@ -21,6 +21,7 @@ window.addEventListener("load",() => {
             const url_base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` + 
             `lon=${lon}&appid=${api}`;
 
+            console.log(url_base);
             fetch(url_base)
             .then((response) => {
 
