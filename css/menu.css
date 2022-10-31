@@ -209,3 +209,64 @@ body {
 .nombre {
     height: 50px;
 }
+
+@media screen and (max-width: 600px) {
+    .menu a {
+        display: block;
+        text-decoration: none;
+        margin: -10px;
+        color: white;
+        transition: all 500ms ease;
+        padding-top: 10px;
+    }
+
+    body {
+        background: url(/images/cel1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .submenu:hover .carrito {
+        display: block;
+        position: absolute;
+        right: 0;
+        color: white;
+        top: 100%;
+        background-color: orange;
+        padding: 0px;
+        min-height: 260px;
+        min-width: 315px;
+        z-index: 1;
+        text-align: center;
+        border-radius: bottom 20px;
+    }
+
+    .lista-carrito {
+        width: 320px;
+    }
+
+    element.style {
+        height: 50px;
+        width: 170px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    element.style {
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-top: 7px;
+        width: 170px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+        align-items: center;
+    }
+}

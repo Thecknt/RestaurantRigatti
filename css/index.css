@@ -18,7 +18,7 @@
     .menu {
         float: right;
         line-height: 80px;
-        margin-top: -75px;
+        margin-top: -50px;
     }
 }
 
@@ -321,6 +321,10 @@ body {
         padding-bottom: 4px;
         color: white;
     }
+
+    a span.a-text {
+        font-size: 0;
+    }
 }
 
 .piepagina .foottexto {
@@ -336,6 +340,10 @@ body {
     align-items: center;
     font-weight: 200;
     color: azure;
+}
+
+.box {
+    height: 20px;
 }
 
 .piepagina .foottexto .box a {
