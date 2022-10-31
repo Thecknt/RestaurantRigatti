@@ -14,6 +14,14 @@
     z-index: 3;
 }
 
+@media screen and (max-width: 484px) {
+    .menu {
+        float: right;
+        line-height: 80px;
+        margin-top: -75px;
+    }
+}
+
 .container {
     max-width: 100%;
     margin: auto;
@@ -217,23 +225,72 @@ body {
 
 .elementotexto {
     color: black;
-    background-color: lightsalmon;
+    background-color: #6c757d;
     width: 49.5%;
     height: 25em;
     padding: 35px;
     align-items: center;
-    border: 1px brown solid;
     border-radius: 20px;
     z-index: 1;
     position: relative;
-    left: 30px
+    left: 30px;
 }
 
 .elementotexto h1 {
     font-family: 'Lobster', cursive;
     font-size: 70px;
     margin-bottom: 20px;
-    z-index: 1
+    z-index: 1;
+}
+
+@media screen and (max-width: 1153px) {
+    .elementotexto h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .elementotexto h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+
+    .elementotexto p {
+        font-size: 15px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .elementotexto h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 20px;
+        margin-bottom: px;
+        z-index: 1;
+    }
+
+    .elementotexto p {
+        font-size: 13px !important;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .elementotexto h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+    .elementotexto p {
+        font-size: 10px;
+        z-index: 1;
+    }
 }
 
 #medio {
@@ -244,6 +301,26 @@ body {
 .elementotexto p {
     font-size: 20px;
     z-index: 1
+}
+
+@media screen and (min-width: 600px) {
+    .portada-content p {
+        top: 80px;
+        font-size: 33px;
+        display: block;
+        padding-bottom: 4px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portada-content p {
+        top: 80px;
+        font-size: 33px;
+        display: block;
+        padding-bottom: 4px;
+        color: white;
+    }
 }
 
 .piepagina .foottexto {
