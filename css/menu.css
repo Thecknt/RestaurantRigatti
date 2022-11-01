@@ -359,4 +359,9 @@ footer {
         margin-right: 75px;
         z-index: 0;
     }
+
+    footer {
+        height: 7vh;
+        margin-top: 185rem;
+    }
 }
