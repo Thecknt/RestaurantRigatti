@@ -17,6 +17,9 @@ function cargarEventListeners() {
 }
 
 function comprar(e) {
+   
+    e.preventDefault();
+if(e.target.classList.contains('button-agregar')){
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -24,8 +27,6 @@ function comprar(e) {
         showConfirmButton: false,
         timer: 1500
       })
-    e.preventDefault();
-if(e.target.classList.contains('button-agregar')){
     totalCart;
     const plato = e.target.parentElement.parentElement;
     leerDatosPlatos(plato);
@@ -69,17 +70,18 @@ guardarPlatoLocalStorage(plato);
 
 function eliminarPlato(e) {
     e.preventDefault();
-    Swal.fire({
-        position: 'top-end',
-        icon: 'error',
-        title: 'Plato eliminado',
-        showConfirmButton: false,
-        timer: 1500
-      })
+    
     let plato,
     platoId;
 
     if(e.target.classList.contains('vaciar-carrito')){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Plato eliminado',
+            showConfirmButton: false,
+            timer: 1500
+          })
         e.target.parentElement.parentElement.remove();
         plato = e.target.parentElement.parentElement;
         platoId = plato.querySelector('a').getAttribute('data-id');
