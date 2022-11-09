@@ -17,6 +17,13 @@ function cargarEventListeners() {
 }
 
 function comprar(e) {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Tu producto ha sido agregado al carrito',
+        showConfirmButton: false,
+        timer: 1500
+      })
     e.preventDefault();
 if(e.target.classList.contains('button-agregar')){
     totalCart;
