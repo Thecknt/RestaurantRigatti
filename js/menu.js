@@ -69,7 +69,13 @@ guardarPlatoLocalStorage(plato);
 
 function eliminarPlato(e) {
     e.preventDefault();
-
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Plato eliminado',
+        showConfirmButton: false,
+        timer: 1500
+      })
     let plato,
     platoId;
 
@@ -156,23 +162,3 @@ function vaciarLocalStorage(){
     localStorage.clear();
     total.innerHTML = totalCart;
 }
-
-//const options = {
-//	method: 'GET',
-//	headers: {
-//		'X-RapidAPI-Key': '40e35aac17mshd3c3d12e994417fp17646ajsnab8000a511b2',
-//		'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
-//	}
-//};
-
-//fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Buenos%20Aires&format=json&u=f', options)
-//	.then(response => response.json())
-//	.then(response => console.log(response))
-//	.catch(err => console.error(err));
-
-	
-
-
-//fetch('https://thecknt.github.io/platosapi/platos.json').then(response => response.json())
-//	.then(response => console.log(response))
-//	.catch(err => console.error(err));
