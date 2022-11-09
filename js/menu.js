@@ -80,7 +80,7 @@ function eliminarPlato(e) {
             icon: 'error',
             title: 'Plato eliminado',
             showConfirmButton: false,
-            timer: 1500
+            timer: 1000
           })
         e.target.parentElement.parentElement.remove();
         plato = e.target.parentElement.parentElement;
