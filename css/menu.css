@@ -113,9 +113,11 @@ body {
     width: 380px;
 }
 
-/*.menu .lista-carrito a {
-    height: 50px;
-}*/
+.delete {
+    background: black;
+    font: red;
+    border-radius: 15px;
+}
 
 .card {
     display: flex;
@@ -322,6 +324,30 @@ footer {
     color: white;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+    .menu {
+        float: right;
+        text-align: center;
+        display: contents;
+    }
+
+    .carta {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        float: right;
+        padding-left: 100px;
+        z-index: 0;
+    }
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background: black;
+    margin-top: 1160px;
+}
+
 @media screen and (max-width: 420px) {
     .pagar {
         height: 50px;
@@ -363,5 +389,35 @@ footer {
     footer {
         height: 7vh;
         margin-top: 185rem;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .menu {
+        float: right;
+        text-align: center;
+        display: contents;
+    }
+
+    .vaciar-carrito {
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-top: 7px;
+        width: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 76px !important;
+        align-items: center;
+        padding-bottom: 8px !important;
+        margin-bottom: auto !important;
+    }
+
+    .delete {
+        background: black;
+        font: red;
+        border-radius: 15px;
     }
 }

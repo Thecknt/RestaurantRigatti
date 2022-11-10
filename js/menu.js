@@ -1,6 +1,7 @@
 const carrito = document.getElementById('carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+let deleteOnePlate = document.getElementById('delete')
 const platos = document.getElementById('platos');
 const pagar = document.getElementById('pagar');
 let total = document.getElementById('total');
@@ -30,9 +31,7 @@ if(e.target.classList.contains('button-agregar')){
     totalCart;
     const plato = e.target.parentElement.parentElement;
     leerDatosPlatos(plato);
-
     }
-    
 }
 
 
@@ -58,11 +57,10 @@ box.innerHTML = `
 <td>${plato.titulo}</td>
 <td>${plato.precio}</td>
 <td>
-<a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
+<a href="#" class="delete" data-id="${plato.id}" style=" color: red">x</a>
 </td>`;
 
 listaCarrito.appendChild(box);
-
 total.innerHTML = totalCart;
 
 guardarPlatoLocalStorage(plato);
@@ -72,13 +70,13 @@ function eliminarPlato(e) {
     e.preventDefault();
     
     let plato,
-    platoId;
+        platoId;
 
-    if(e.target.classList.contains('vaciar-carrito')){
+    if(e.target.classList.contains('delete')){
         Swal.fire({
             position: 'top-end',
             icon: 'error',
-            title: 'Plato eliminado',
+            title: 'Producto eliminado',
             showConfirmButton: false,
             timer: 1000
           })
@@ -108,16 +106,18 @@ function guardarPlatoLocalStorage(plato) {
 
     platos.push(plato);
 
-    localStorage.setItem('platos', JSON.stringify(platos));
+    localStorage.setItem("platos", JSON.stringify(platos));
 }
 
 function obtenerPlatosLocalStorage() {
     let platosLocal;
     
-    if(localStorage.getItem('platos') === null) {
+    if(localStorage.getItem("platos") === null) {
         platosLocal = [];
+        totalCart = 0;
     } else {
-        platosLocal = JSON.parse(localStorage.getItem('platos'));
+        platosLocal = JSON.parse(localStorage.getItem("platos"));
+
     }
     return platosLocal;
     console.log(platosLocal)
@@ -137,7 +137,7 @@ function verLocalStorage() {
         <td>${plato.titulo}</td>
         <td>${plato.precio}</td>
         <td>
-        <a href="#" class="vaciar-carrito" data-id="${plato.id}">x</a>
+        <a href="#" class="delete" data-id="${plato.id}" style=" color: red">x</a>
         </td>`;
 
         listaCarrito.appendChild(box);
@@ -151,16 +151,17 @@ function eliminarPlatolocalStorage(plato){
 
     platosLocal = obtenerPlatosLocalStorage();
 
-    platosLocal.forEach(function(platosLocal, index){
-        if(platosLocal.id === plato){
-            platosLocal.splice(index,1);
+    platosLocal.forEach(function(platosLocal, index) {
+
+        if(platosLocal.id === plato) {
+            platosLocal.splice(index, 1);
         }
     });
 
-    localStorage.setItem('platos', JSON.stringify(platosLocal));
+    localStorage.setItem("platos", JSON.stringify(platosLocal));
 }
 
-function vaciarLocalStorage(){
+function vaciarLocalStorage() {
     localStorage.clear();
     total.innerHTML = totalCart;
 }
