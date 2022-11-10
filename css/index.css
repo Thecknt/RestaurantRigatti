@@ -199,7 +199,6 @@ body {
 }
 
 .elementoimg {
-    border: 1px brown solid;
     border-radius: 20px;
     align-items: center;
     width: 49.5%;
@@ -385,6 +384,17 @@ body {
         grid-template-columns: 18.66% 13.66% 13.66% 10% !important;
     }
 
+    .elementoimg {
+        border-radius: 20px;
+        align-items: center;
+        width: 49.5%;
+        height: 25em;
+        object-fit: cover;
+        z-index: 0;
+        position: relative;
+        right: 25px;
+    }
+
     .portada-content {
         z-index: 2;
         top: 80px;
@@ -396,7 +406,7 @@ body {
     .menu {
         float: right;
         line-height: 80px;
-        margin-top: -50px;
+        margin-top: -71px;
         margin-right: -26px;
     }
 
@@ -415,6 +425,7 @@ body {
         float: right;
         text-align: center;
         display: contents;
+        margin-top: -71px;
     }
 
     .weather {
@@ -424,6 +435,17 @@ body {
         display: inline-block;
         margin-top: 7px;
         font-size: 13px;
+    }
+
+    .elementoimg {
+        border-radius: 20px;
+        align-items: center;
+        width: 49.5%;
+        height: 25em;
+        object-fit: cover;
+        z-index: 0;
+        position: relative;
+        right: 25px;
     }
 }
 

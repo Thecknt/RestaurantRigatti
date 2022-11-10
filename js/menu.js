@@ -83,16 +83,18 @@ function eliminarPlato(e) {
         e.target.parentElement.parentElement.remove();
         plato = e.target.parentElement.parentElement;
         platoId = plato.querySelector('a').getAttribute('data-id');
+        totalCart = parseFloat(totalCart) - parseFloat(totalCart);
+        totalCart = totalCart.toFixed(2);
     }
 
-    totalCart = parseFloat(totalCart) - parseFloat(totalCart);
-    totalCart = totalCart.toFixed(2);
+
     eliminarPlatolocalStorage(platoId);
 }
 
 function vaciarCarrito() {
     while(listaCarrito.firstChild){
         listaCarrito.removeChild(listaCarrito.firstChild);
+        totalCart = 0;
     }
 
 vaciarLocalStorage();
