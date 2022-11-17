@@ -281,12 +281,8 @@ body {
     }
 
     .carta {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        float: right;
         padding-left: 100px;
-        z-index: 0;
+        margin-right: 153px !important;
     }
 }
 

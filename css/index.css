@@ -404,10 +404,8 @@ body {
     }
 
     .menu {
-        float: right;
-        line-height: 80px;
-        margin-top: -71px;
-        margin-right: -26px;
+        margin-top: -73px !important;
+        margin-right: -24px;
     }
 
     .weather {
@@ -429,11 +427,10 @@ body {
 
     .weather {
         color: white;
-        margin-left: 8px;
-        text-align: center;
-        display: inline-block;
-        margin-top: 7px;
+        margin-left: -2px !important;
+        margin-top: 17px !important;
         font-size: 13px;
+        padding-top: 4px;
     }
 
     .elementoimg {
@@ -505,3 +502,5 @@ body {
     display: inline-block;
     margin-top: 0px;
 }
+
+@media screen and (max-width: 410px) {}
