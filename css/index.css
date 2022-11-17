@@ -420,12 +420,11 @@ body {
 }
 
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 412px) {
     .menu {
-        float: right;
         text-align: center;
-        display: contents;
-        margin-top: -71px;
+        margin-top: -40px;
+        padding-right: 20px;
     }
 
     .weather {

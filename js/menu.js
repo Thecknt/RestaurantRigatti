@@ -15,6 +15,7 @@ function cargarEventListeners() {
     carrito.addEventListener('click', eliminarPlato);
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
     document.addEventListener('DOMContentLoaded', verLocalStorage);
+    pagar.addEventListener('click', btnPay);
 }
 
 function comprar(e) {
@@ -166,4 +167,17 @@ function eliminarPlatolocalStorage(plato){
 function vaciarLocalStorage() {
     localStorage.clear();
     total.innerHTML = totalCart;
+}
+
+function btnPay() {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Gracias por su compra',
+        showConfirmButton: false,
+        timer: 1000
+      })
+
+      vaciarCarrito();
+      localStorage.clear();
 }
